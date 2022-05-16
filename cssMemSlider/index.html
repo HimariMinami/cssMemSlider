@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,47 @@
 </head>
 <body>
     <div class="meme-slider">
-        <div class="container">
-            
-        </div>
+        <div class="memes">
+            <input type="radio" name="slider" id="radio1" checked>
+            <input type="radio" name="slider" id="radio2">
+            <input type="radio" name="slider" id="radio3">
+            <input type="radio" name="slider" id="radio4">
 
+            <div class="meme meme-displayed">
+                <img src="./assets/fishes.jpg" alt="Вы рыбов показываете?">
+            </div>
+            <div class="meme">
+                <img src="./assets/cat_and_food.jpg" alt="Жрадло">
+            </div>
+            <div class="meme">
+                <img src="./assets/cat_Stepan.jpg" alt="Кот Степан">
+            </div>
+            <div class="meme">
+                <img src="./assets/chmonja-cat.jpg" alt="Чмоня">
+            </div>
+        </div>
+        <div class="description-and-controls">
+            <div class="meme-description">
+                <p class="meme-description-text" id="meme-text1">Вы рыбов показываете?</p>
+                <p class="meme-description-text" id="meme-text2">Чем больше кот, тем больше радости он приносит :)</p>
+                <p class="meme-description-text" id="meme-text3">Хорошо, когда кот может составить компанию х)</p>
+                <p class="meme-description-text" id="meme-text4">Объясните свою маленькость</p>
+            </div>
+            <div class="meme-controls">
+                <label for="radio1" class="control">
+                    <span class="control-item"></span>
+                </label>
+                <label for="radio2" class="control">
+                    <span class="control-item"></span>
+                </label>
+                <label for="radio3" class="control">
+                    <span class="control-item"></span>
+                </label>
+                <label for="radio4" class="control">
+                    <span class="control-item"></span>
+                </label>
+            </div>
+        </div>
     </div>
 </body>
 </html>
