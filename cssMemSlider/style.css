@@ -61,8 +61,8 @@ input[type="radio"] {
 
 .meme-description-text {
     width: 20em;
-    padding-top: 15px;
-    font-size: 20px;
+    padding-top: 1em;
+    font-size: 1.3em;
 }
 
 .meme-pagination {
@@ -77,20 +77,20 @@ input[type="radio"] {
     height: 2em;
     transition: 0.5s;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 1em;
 }
 
-.pagination span {
-    width: 15px;
-    height:  15px;
+.pagination-item {
+    width: 1em;
+    height:  1em;
     background-color: chocolate;
-    border: chocolate 1px solid;
+    border: chocolate 6% solid;
     border-radius: 100%;
 }
 
-.pagination:hover span {
+.pagination-item:hover {
     background-color: coral;
-    border: coral 1px solid;
+    border: coral 6% solid;
     transition: 0.5s;
 }
 
@@ -131,5 +131,14 @@ input[type="radio"] {
 
 #radio4:checked ~ .description-and-pagination .meme-description .meme-description-container {
     margin-left: -75em;
+    transition: 0.5s;
+}
+
+#radio1:checked ~ .description-and-pagination .meme-pagination .label1 .pagination-item,
+#radio2:checked ~ .description-and-pagination .meme-pagination .label2 .pagination-item,
+#radio3:checked ~ .description-and-pagination .meme-pagination .label3 .pagination-item,
+#radio4:checked ~ .description-and-pagination .meme-pagination .label4 .pagination-item {
+    background-color: orange;
+    border: orange 6% solid;
     transition: 0.5s;
 }
