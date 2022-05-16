@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: cornsilk;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+}
+
+.meme-slider {
+    margin: 0 auto;
+    max-width: 33em;
+    padding-top: 5em;
+}
+
+.meme-container {
+    overflow: hidden;
+}
+
+.memes {
+    display: flex;
+    width: 129em;
+    height: 30em;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.meme img {
+    width: 100%;
+    height: 100%;
+}
+
+#radio1:checked ~ .meme-displayed {
+    margin-left: 0;
+    transition: 0.5s;
+}
+
+.description-and-pagination {
+    display: flex;
+    width: 20em;
+    height: 7em;
+    justify-content: space-between;
+}
+
+.meme-description {
+    width: 50em;
+    overflow: hidden;
+}
+
+.meme-description-container {
+    display: flex;
+    width: 67em;
+}
+
+.meme-pagination {
+    display: flex;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.pagination span {
+    width: 15px;
+    height:  15px;
+    background-color: chocolate;
+    border: chocolate 1px solid;
+    border-radius: 100%;
+}
+
+.pagination:hover span {
+    background-color: coral;
+    border: coral 1px solid;
+    transition: 0.5s;
+}
