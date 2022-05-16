@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meme slider by Anastasiya Kh.</title>
+</head>
+<body>
+    <div class="meme-slider">
+        <input type="radio" name="slider" id="radio1" checked>
+        <input type="radio" name="slider" id="radio2">
+        <input type="radio" name="slider" id="radio3">
+        <input type="radio" name="slider" id="radio4">
+
+        <div class="meme-container">
+            <div class="memes">
+                <div class="meme meme-displayed">
+                    <img src="./assets/fishes.jpg" alt="Вы рыбов показываете?">
+                </div>
+                <div class="meme">
+                    <img src="./assets/cat_and_food.jpg" alt="Жрадло">
+                </div>
+                <div class="meme">
+                    <img src="./assets/cat_Stepan.jpg" alt="Кот Степан">
+                </div>
+                <div class="meme">
+                    <img src="./assets/chmonja-cat.jpg" alt="Чмоня">
+                </div>
+            </div>
+        </div>
+        <div class="description-and-pagination">
+                <div class="meme-description">
+                    <div class="meme-description-container">
+                        <p class="meme-description-text">Вы рыбов показываете?</p>
+                        <p class="meme-description-text">Чем больше кот, тем больше радости он приносит :)</p>
+                        <p class="meme-description-text">Хорошо, когда кот может составить компанию х)</p>
+                        <p class="meme-description-text">Объясните свою маленькость</p>
+                    </div>
+                </div>
+            <div class="meme-pagination">
+                <label for="radio1" class="pagination label1">
+                    <span class="pagination-item"></span>
+                </label>
+                <label for="radio2" class="pagination label2">
+                    <span class="pagination-item"></span>
+                </label>
+                <label for="radio3" class="pagination label3">
+                    <span class="pagination-item"></span>
+                </label>
+                <label for="radio4" class="pagination label4">
+                    <span class="pagination-item"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
