@@ -19,7 +19,7 @@ body {
 
 .meme-container {
     overflow: hidden;
-    width: 35em;
+    width: 100%;
 }
 
 .memes {
@@ -141,4 +141,35 @@ input[type="radio"] {
     background-color: orange;
     border: orange 6% solid;
     transition: 0.5s;
+}
+
+@media (max-width: 425px) {
+    .meme-slider {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .meme-slider {
+        max-width: 25em;
+    }
+
+    .meme-container {
+        height: 56%;
+    }
+
+    .meme img {
+        width: 72%;
+        height: 72%;
+    }
+
+    .description-and-pagination {
+        flex-direction: column-reverse;
+        width: 8em;
+        height: 9em;
+        margin: 0 auto;
+    }
+
+    .meme-description {
+        margin-left: -8.5em;
+    }
 }
